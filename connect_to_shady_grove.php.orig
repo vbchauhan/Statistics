@@ -1,0 +1,11 @@
+<?php # connect_to_lib_rsrc_mgmt.php
+
+
+DEFINE ('DB_USER', 'sglstatistics');
+DEFINE ('DB_PASSWORD', 'skdfjsk9er');
+DEFINE ('DB_HOST', 'localhost');
+#DEFINE ('DB_NAME', 'priyasga_lib_rsrc_mgmt');
+DEFINE ('DB_NAME', 'sglstatistics');
+
+$dbc = @mysqli_connect (DB_HOST, DB_USER,DB_PASSWORD, DB_NAME) OR die ('Could not connect to MySQL: ' .mysqli_connect_error() );
+?>
